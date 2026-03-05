@@ -21,7 +21,7 @@ const App = () => {
 
         <ul>
           <li><Link to='/playGround'>PlayGround</Link></li>
-          <li><Link to='/login'>Log In</Link></li>
+          <li><Link to='/login'>Login</Link></li>
         </ul>
 
       </div>
