@@ -1,11 +1,13 @@
-import React, { Children } from 'react';
-import { Navigate } from 'react-router-dom';
+import React from "react";
+import { Navigate } from "react-router-dom";
 
-const PrivateRoute=({login,Children})=>{
-    console.log(login);
-    if(!login){
-        return <Navigate to='/login'/>
-    }
-    return Children;
-}
+const PrivateRoute = ({ login, children }) => {
+
+  if (!login) {
+    return <Navigate to="/login" />;
+  }
+
+  return children;
+};
+
 export default PrivateRoute;
