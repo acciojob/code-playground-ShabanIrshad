@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import "./../styles/App.css";
 import { Link, Switch, Route } from "react-router-dom";
 
-import PrivateRoute from "./PrivateRoute";
-import Login from "./Login";
-import Playground from "./Playground";
+import PrivateRoute from "./PrivateRoute.js";
+import Login from "./Login.js";
+import Playground from "./Playground.js";
 
 const App = () => {
   const [loggedIn, setLoggedIn] = useState(false);
