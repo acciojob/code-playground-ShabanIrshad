@@ -1,13 +1,12 @@
-import React from 'react';
-const Login=({data})=>{
-
-    console.log("login component ===> ", data);
-    const {login,setLogin}=data;
-    return (
-        <>
-            <p>Login</p>
-            <button onClick={()=>setLogin(!login)}>{login?'Log Out':'Login'}</button>
-        </>
-    );
+import React from "react";
+function Login({ setLoggedIn, loggedIn }) {
+  return (
+    <>
+      <p>login</p>
+      <button onClick={() => setLoggedIn((cur) => !cur)}>
+        {loggedIn ? "Log Out" : "Log In"}
+      </button>
+    </>
+  );
 }
 export default Login;

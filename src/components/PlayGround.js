@@ -1,10 +1,11 @@
-import React from 'react';
+import React from "react";
 
-const PlayGround=()=>{
-    return (
-        <>
-            <p>Hi, Welcome to code PlayGround.</p>
-        </>
-    );
-}
-export default PlayGround;
+const Playground = () => {
+  return (
+    <div>
+      <p>Hi Welcome to Code PlayGround</p>
+    </div>
+  );
+};
+
+export default Playground;
