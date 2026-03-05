@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { Children } from 'react';
 import { Navigate } from 'react-router-dom';
 
-const PrivateRoute=({login})=>{
+const PrivateRoute=({login,Children})=>{
     console.log(login);
-    if(login){
-        return <Navigate to='/playGround'/>
+    if(!login){
+        return <Navigate to='/login'/>
     }
-    return <p>Page not found.</p>
+    return Children;
 }
 export default PrivateRoute;

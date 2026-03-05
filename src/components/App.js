@@ -11,10 +11,10 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="main-container">
-        {login?'Logged in , Now you can enter Playground.' :'You are not authenticated, Please Login first.'}
+        {login?<p>Logged in, Now you can enter Playground</p> :<p>You are not authenticated, Please login first</p>}
         <ul>
           <li><Link to='/playGround'>PlayGround</Link></li>
-          <li><Link to='/login'>Login</Link></li>
+          <li><Link to='/login'>Log In</Link></li>
         </ul>
       </div>
      <Routes>
